@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hashcracker"
+version = "1.0.0"
+description = "Educational MD5/SHA-1/SHA-256 hash cracker (dictionary + brute-force)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Your Name" }]
+keywords = ["security", "education", "ctf", "hashing", "password"]
+# Intentionally zero runtime dependencies: everything uses the Python standard
+# library (hashlib, itertools, multiprocessing, argparse). That keeps the
+# learning surface small and the install trivial.
+dependencies = []
+
+[project.optional-dependencies]
+# `pip install -e ".[dev]"` to get the test runner.
+dev = ["pytest>=7"]
+
+[project.scripts]
+# Creates a `hashcracker` command on PATH that calls hashcracker.cli:main.
+hashcracker = "hashcracker.cli:main"
+
+[tool.setuptools]
+packages = ["hashcracker"]
