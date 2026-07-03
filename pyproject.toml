@@ -9,7 +9,7 @@ description = "Educational MD5/SHA-1/SHA-256 hash cracker (dictionary + brute-fo
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "Your Name" }]
+authors = [{ name = "Tarik JAbbour" }]
 keywords = ["security", "education", "ctf", "hashing", "password"]
 # Intentionally zero runtime dependencies: everything uses the Python standard
 # library (hashlib, itertools, multiprocessing, argparse). That keeps the
